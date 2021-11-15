@@ -6,5 +6,8 @@
     "discord.js": "^13.2.0",
     "pinterest-api": "^1.0.0",
     "wokcommands": "^1.5.3"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
