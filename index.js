@@ -1,8 +1,9 @@
 const DiscordJS = require('discord.js')
+const dotenv=require('dotenv')
 const WOKCommands = require('wokcommands')
 var fs = require('fs');
 
-
+dotenv.config()
 const path = require('path')
 const { Client, Intents } = require('discord.js');
 const { token } = require('./config.json');
@@ -58,4 +59,4 @@ const client = new DiscordJS.Client({
   });
 
 
-client.login(token);
+client.login(process.env.BOT_TOKEN);
